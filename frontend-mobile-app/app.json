@@ -30,7 +30,7 @@
       "package": "chnu.for.you"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/chnu-icon.png"
     }
   }
 }
