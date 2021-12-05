@@ -23,6 +23,7 @@
     "effector-react": "^22.0.4",
     "expo": "~43.0.2",
     "expo-font": "^10.0.3",
+    "expo-localization": "~11.0.0",
     "expo-speech": "~10.0.3",
     "expo-status-bar": "~1.1.0",
     "formik": "^2.2.9",
