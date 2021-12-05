@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "chnu-4-you-test",
-    "slug": "chnu-4-you-test",
+    "name": "chnu4you",
+    "slug": "chnu-for-you",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/chnu-icon.png",
