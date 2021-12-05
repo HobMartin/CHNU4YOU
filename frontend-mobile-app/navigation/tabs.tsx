@@ -4,42 +4,59 @@ import Chat from "../components/pages/Chat";
 import Home from "../components/pages/Home";
 import Profile from "../components/pages/Profile";
 import Schedule from "../components/pages/Schedule";
+import Authentication from "../components/pages/Auth";
 
 import { Ionicons } from "@expo/vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Subject } from "../components/features/Subject";
+import Register from "../components/pages/Auth/Register";
 
 const Tab = createBottomTabNavigator();
-const HomeStack = createStackNavigator();
+const Stack = createStackNavigator();
+
+export const AuthPage = () => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name="AuthScreen"
+      component={Authentication}
+      options={{ headerShown: false }}
+    />
+    <Stack.Screen
+      name="RegisterScreen"
+      component={Register}
+      options={{ headerShown: false }}
+    />
+  </Stack.Navigator>
+);
 
 const HomePage = () => (
-  <HomeStack.Navigator>
-    <HomeStack.Screen
+  <Stack.Navigator>
+    <Stack.Screen
       name="HomePage"
       component={Home}
       options={{ headerShown: false }}
     />
-    <HomeStack.Screen
+    <Stack.Screen
       name="Subject"
       component={Subject}
       options={{ headerShown: false }}
     />
-  </HomeStack.Navigator>
+  </Stack.Navigator>
 );
 
 const SchedulePage = () => (
-  <HomeStack.Navigator>
-    <HomeStack.Screen
+  <Stack.Navigator>
+    <Stack.Screen
       name="ShedulePage"
       component={Schedule}
       options={{ headerShown: false }}
     />
-    <HomeStack.Screen
+    <Stack.Screen
       name="Subject"
       component={Subject}
       options={{ headerShown: false }}
     />
-  </HomeStack.Navigator>
+  </Stack.Navigator>
 );
 
 export const Tabs = () => (

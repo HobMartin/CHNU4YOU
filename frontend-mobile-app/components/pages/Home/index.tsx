@@ -5,6 +5,7 @@ import { mainStyle } from "../../../styles";
 import { SubjectList } from "../../features/SubjectsList";
 import { BlockNews } from "../../features/BlockNews";
 import * as Speech from "expo-speech";
+import { auth } from "../../../firebase";
 
 export default function Home({ navigation }: any) {
   const speak = () => {
@@ -16,7 +17,7 @@ export default function Home({ navigation }: any) {
   }, []);
   return (
     <View style={mainStyle.container}>
-      <MainHeader title="Сьогодні">
+      <MainHeader title={`${auth.currentUser?.email}`}>
         <SubjectList navigation={navigation} />
       </MainHeader>
       <BlockNews />

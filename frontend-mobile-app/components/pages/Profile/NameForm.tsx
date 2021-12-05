@@ -2,7 +2,7 @@ import { Formik } from "formik";
 import React from "react";
 import { StyleSheet, TextInput, View, Text } from "react-native";
 
-export const NameForm = ({ user, onSubmit, isEdit }: any) => {
+export const NameForm = ({ user, onSubmit, isEdit, fieldChanged }: any) => {
   return (
     <View>
       <Formik
