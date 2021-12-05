@@ -37,3 +37,14 @@ After authorization, the user additionally opens the following functionality:
 - Django
 
 ## Installation
+
+- `npm install --global expo-cli`
+- `npm install --global yarn`
+
+Then need to download needed libraries
+
+- Run `yarn install`
+
+Now you can run a application
+
+- Use `yarn start`
