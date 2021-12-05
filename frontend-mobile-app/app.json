@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "chnu-4-you-test",
-    "slug": "chnu-4-you-test",
+    "name": "chnu4you",
+    "slug": "chnu-for-you",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/chnu-icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#D8DBE2"
+      "image": "./assets/beBetter.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFF"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -24,13 +24,21 @@
     "android": {
       "userInterfaceStyle": "automatic",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/chnu-icon.png",
         "backgroundColor": "#D8DBE2"
       },
       "package": "chnu.for.you"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "favicon": "./assets/chnu-icon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ]
   }
 }
