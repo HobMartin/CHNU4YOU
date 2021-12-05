@@ -36,15 +36,24 @@ After authorization, the user additionally opens the following functionality:
 - React Native
 - Django
 
-## Installation
+## Installation Frontend Mobile App
 
 - `npm install --global expo-cli`
 - `npm install --global yarn`
 
-Then need to download needed libraries
+Then need to download needed packeges
 
 - Run `yarn install`
 
-Now you can run a application
+## Installation Backend server
+
+- `pip install pipenv`
+
+- `pipenv install` to install needed packeges
+- `pipenv shell` to activate virtualenv
+
+## Run the application
+
+- Run `./manage.py runserver`
 
 - Use `yarn start`
